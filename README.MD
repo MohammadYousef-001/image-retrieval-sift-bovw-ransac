@@ -1,22 +1,27 @@
-Dataset:
-Oxford Buildings Dataset (Oxford5k)
+## Dataset
 
-Image data:
-Downloaded from Kaggle:
+This project uses the **Oxford Buildings Dataset (Oxford5k)**.
+
+### Image Data
+The image dataset was downloaded from Kaggle:  
 https://www.kaggle.com/datasets/skylord/oxbuildings
 
-Ground truth and evaluation files:
-Provided by the original Oxford Visual Geometry Group:
+### Ground Truth and Evaluation Files
+The ground truth and evaluation files were obtained from the original Oxford Visual Geometry Group (VGG):  
 https://www.robots.ox.ac.uk/~vgg/data/oxbuildings/
 
-Expected folder structure:
-- images/
-- ground_truth/
-- cache_sift_xy_resize1024_linear/
-- features_spm_L2_K2000/
-- features_spm_L2_K2000_tfidf/
-- models/
+## Expected Folder Structure
 
-How to run:
-- Baseline retrieval: python main.py
-- RANSAC-enhanced retrieval: python mainR.py
+```text
+project-folder/
+│
+├── images/
+├── ground_truth/
+├── cache_sift_xy_resize1024_linear/
+├── features_spm_L2_K2000/
+├── features_spm_L2_K2000_tfidf/
+├── models/
+│
+├── main.py
+├── mainR.py
+└── README.md
